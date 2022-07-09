@@ -2,21 +2,21 @@
 node_modules
 
 # PRODUCTION
-database
-storage
-build
-dist
+./database
+./storage
+./build
+./dist
 
 # TEMP
-backup
-custom
-others
-temp
-tmp
+./backup
+./custom
+./others
+./temp
+./tmp
 
 # LOCAL
-coverage
-rest_client
-client
-rest
+./coverage
+./rest_client
+./client
+./rest
 .env
