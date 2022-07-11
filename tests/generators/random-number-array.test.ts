@@ -47,7 +47,7 @@ it('Should work with any range of min and max values.', () => {
 // TEST
 it('Should work when the min and max values are equal.', () => {
 
-  let params = { min: -10, max: -10 }
+  let params = { min: 10, max: 10 }
   let array = generateExample(params)
 
   expect(array.min).toBeGreaterThanOrEqual(params.min)
@@ -59,7 +59,7 @@ it('Should work when the min and max values are equal.', () => {
   expect(array.min).toBeGreaterThanOrEqual(params.min)
   expect(array.max).toBeLessThanOrEqual(params.max)
 
-  params = { min: 10, max: 10 }
+  params = { min: -10, max: -10 }
   array = generateExample(params)
 
   expect(array.min).toBeGreaterThanOrEqual(params.min)
@@ -70,7 +70,7 @@ it('Should work when the min and max values are equal.', () => {
 // TEST
 it('Should work when the min and max values are swapped.', () => {
 
-  let params = { min: -1, max: -10 }
+  let params = { min: 10, max: 1 }
   let array = generateExample(params)
 
   expect(array.min).toBeGreaterThanOrEqual(params.max)
@@ -82,7 +82,7 @@ it('Should work when the min and max values are swapped.', () => {
   expect(array.min).toBeGreaterThanOrEqual(params.max)
   expect(array.max).toBeLessThanOrEqual(params.min)
 
-  params = { min: 10, max: 1 }
+  params = { min: -1, max: -10 }
   array = generateExample(params)
 
   expect(array.min).toBeGreaterThanOrEqual(params.max)
