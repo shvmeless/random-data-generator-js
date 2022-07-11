@@ -5,8 +5,8 @@ export default function randomNumber (options: { min: number, max: number }): nu
   const min = Math.min(options.min, options.max)
   const max = Math.max(options.min, options.max)
 
-  const range = max - min
+  const range = Math.abs(max - min)
 
-  return Math.round((Math.random() * range + min))
+  return Math.random() * range + min
 
 }
