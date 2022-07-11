@@ -1,9 +1,9 @@
 
 // FUNCTION
-export default function randomNumber (options: { min: number, max: number }): number {
+export default function randomNumber (params: { min: number, max: number }): number {
 
-  const min = Math.min(options.min, options.max)
-  const max = Math.max(options.min, options.max)
+  const min = Math.min(params.min, params.max)
+  const max = Math.max(params.min, params.max)
 
   const range = Math.abs(max - min)
 
