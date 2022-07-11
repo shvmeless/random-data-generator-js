@@ -1,7 +1,7 @@
 
 // FUNCTION
 export default function randomIntegerArray (
-  params: { min: number, max: number, length: number, repeat?: boolean }
+  params: { min: number, max: number, length: number, repeat?: boolean },
 ): number[] {
 
   const min = Math.trunc(Math.min(params.min, params.max))

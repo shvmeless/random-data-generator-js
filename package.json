@@ -14,7 +14,8 @@
   "scripts": {
     "build": "tsc -p ./tsconfig.prod.json",
     "test": "jest ./tests --silent --verbose --maxWorkers=1",
-    "test:watch": "jest ./tests --watch --silent --verbose --maxWorkers=1"
+    "test:watch": "jest ./tests --watch --silent --verbose --maxWorkers=1",
+    "lint": "eslint ./src/**/*.ts ./src/**/*.ts --fix"
   },
   "devDependencies": {
     "@types/jest": "28.1.4",

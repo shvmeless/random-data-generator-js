@@ -1,7 +1,7 @@
 
 // FUNCTION
 export default function randomNumberArray (
-  params: { min: number, max: number, length: number }
+  params: { min: number, max: number, length: number },
 ): number[] {
 
   const min = Math.min(params.min, params.max)
