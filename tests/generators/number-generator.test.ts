@@ -1,5 +1,5 @@
 // IMPORTS
-import randomNumber from './number-generator'
+import randomNumber from '../../src/generators/number-generator'
 
 // FUNCTION
 function randomSample (options: Parameters<typeof randomNumber>[0]) {

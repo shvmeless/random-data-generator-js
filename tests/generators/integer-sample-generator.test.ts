@@ -1,5 +1,5 @@
 // IMPORTS
-import randomIntegerSample from './integer-sample-generator'
+import randomIntegerSample from '../../src/generators/integer-sample-generator'
 
 // FUNCTION
 function setOptions (options: {min: number, max: number, repeat: boolean}): Parameters<typeof randomIntegerSample>[0] {
